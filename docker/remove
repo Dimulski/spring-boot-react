@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Stop Docker containers
+docker compose down
+
+# Remove db files
+sudo rm -rf /usr/local/codex/db

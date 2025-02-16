@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Stop local mysql for freeing port 3306.
+brew services stop mysql
+
+# Build db.
+mkdir -p /usr/local/codex/db
+# sudo chmod -R 777 /srv/codex/db
+
+# Build Docker containers.
+docker compose up -d
